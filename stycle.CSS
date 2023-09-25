@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+}
+
+.motherDiv {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url("Images/image 1.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* PRELOADER */
+/* for the 'dark' display before the main page content loads; */
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #111111fa;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 2s ease;
+}
+
+/* the below is for the rotating loading circle before the page loads; */
+.preloader .loader{
+    height: 50px;
+    width: 50px;
+    border: 3px solid brown;
+    border-right: 0.2px solid transparent;
+    border-radius: 50%;
+    animation: ani01 0.7s linear infinite;
+}
+
+@keyframes ani01{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+/* NAVBAR */
+.mNav{
+    width: 85%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.mNav span a  {
+    text-decoration:none ;
+    display: inline-block;
+    margin: 0 20px;
+    
+    color: white;
+   
+}
+
+.mNav span a:hover {
+    color: brown;
+    transition: 0.5s;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/*INDEX PAGE*/
+.sectOne{
+    width: 100%;
+    margin-top: 90px;
+    text-align: center;
+    justify-content: center;
+    color: white;
+}
+
+.sectOne h1{
+    font-size: 50px;
+    margin-top: 80px;
+}
+
+.sectOne p{
+    margin: 10px auto;
+    font-weight: 700;
+
+}
+
+.sectOne  button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.sectOne a{
+    color: white;
+    text-decoration: none;
+}
+
+.sectOne a:hover {
+    text-decoration: none;
+    color: #abc0be;
+    transition: 1s;
+}
+
+.sectOne span{
+    background: #009688;
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.sectOne span:hover {
+    transition: 1s;
+    background: brown;
+   
+}
+
+.sectOne button:hover {
+    border: 2px solid brown;
+    transition: 0.5s;
+}
+
+footer {
+    position: absolute;
+    background: brown;
+    color:white;
+    height: 40px;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    font-weight: 500;
+    bottom: 0;
+    width: 100%;
+  }
+
+/*COURSE PAGE*/
+.motherDivC{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url("Images/world-student-day1.webp");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.courseSectOne{
+    width: 100%;
+    margin-top: 90px;
+    text-align: center;
+    justify-content: center;
+    color: white;
+}
+
+.courseSectOne h1{
+    font-size: 45px;
+    margin-top: 80px;
+}
+
+.courseSectOneBt{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.courseSectOneBt:hover{
+    width: 210px;
+    transition: 1.5s;
+}
+
+.courseSectOneBt a{
+    color: white;
+    text-decoration: none;
+}
+
+.courseSectOneBt a:hover {
+    color:rgb(255, 255, 255);
+    text-decoration:transparent ;
+    font-size:larger ;
+    background-color: rgba(0, 255, 255, 0.527);
+    border-radius: 20px;
+    padding: 9px 5px ;
+    transition: 1s;
+    border: 1px solid aqua;
+}
+
+
+/*REGISTERATION PAGE*/
+.motherDivR{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url("Images/images.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.registaSection{
+    width: 100%;
+    padding: 0 100px ;
+    margin-top: 40px;
+    text-align:left ;
+    color: white;
+}
+
+.registaSection h1{
+    font-size: 45px;
+}
+
+.left{
+    margin: 12px;
+    font-size: large;
+}
+
+form input{
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.registaSectOneBt{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    cursor: pointer;
+    font-size: large;
+    color: antiquewhite;
+}
+
+.registaSectOneBt:hover {
+    color:rgb(255, 255, 255);
+    text-decoration:unset ;
+    font-size:larger ;
+    background-color: rgba(0, 255, 255, 0.432);
+    border-radius: 20px;
+    padding: 9px 5px ;
+    transition: 2s;
+    border: 1px solid aqua;
+    width: 210px;
+}
+
+
+/*CONTACT PAGE*/
+.contactSect{
+    width: 100%;
+    margin-top: 90px;
+    text-align: center;
+    justify-content: center;
+    color: brown;
+}
+
+.contact-info{
+    padding: 40px;
+    margin: 150px 220px;
+    background-color: rgba(255, 255, 255, 0.514);
+    border-radius: 25px;
+}
+
+.info-item h5{
+    background-color: aliceblue;
+    border-radius: 25px;
+    padding: 2px 0;
+    width: 100px;
+    text-align: center;
+    margin: auto;
+}
+
+.info-item{
+    margin: 20px;
+    font-size: larger;
+    font-weight:bolder ;
+}

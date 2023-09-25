@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="shortcut icon" type="image/x-icon" href="Images\favicon.jpeg" />
+    <link rel="stylesheet" href="stycle.CSS">
+    <link rel="stylesheet" href="jquery ui/jquery-ui.css">
+    <link rel="stylesheet" href="jquery ui/jquery-ui.structure.css">
+    <link rel="stylesheet" href="jquery ui/jquery-ui.theme.css">
+</head>
+<body>
+    <div class="motherDivR">
+        <header class="mHeader">
+            <nav class="mNav">
+                <img src="Images\schoollogo.jpeg" alt="schoollogo" class="logo" >
+                <div class="mDiv">
+                    <span><a href="index.HTML">Home </a></span> |
+                    <span><a href="course.HTML">Course </a></span> |
+                    <span><a href="register.HTML">Register</a></span> |
+                    <span><a href="contact.HTML">Contact</a></span>
+                </div>
+            </nav>
+        </header>
+
+        <section class="registaSection">
+            <h1>REGISTER COURSES</h1>
+            <form class="form">
+                <div class="row">
+                    <div class="left input-group">
+                        <label for="">Name</label>
+                        <input type="text" placeholder="Your Name Here" class="input-control">
+                    </div>
+                    <div class="left input-group">
+                        <label for="">Matric Number</label>
+                        <input type="text" placeholder="Your Matric Number Here" class="input-control">
+                    </div>
+                    <div class="left input-group">
+                        <label for="">Department</label>
+                        <input type="text" placeholder="Your Department Here" class="input-control">
+                    </div>
+                    <div class="left input-group">
+                        <label for="">Session</label>
+                        <input type="text" placeholder="Your Session Here" class="input-control">
+                    </div>
+                    <div class="left input-group">
+                        <!-- List of selected courses will be rendered here from the 'course page' -->
+                        <label for="">List of Courses</label>
+                        <input type="text" placeholder="Your List of Courses Here" class="input-control">
+                    </div>
+                    <div class="left input-group">
+                        <label>Email or Phone</label>
+                        <input type="text" placeholder="Your Email or Phone Here" class="input-control">
+                    </div>
+                </div>
+                <div class="form-btn">
+                    <button type="button" class="registaSectOneBt" id="button">REGISTER</button>
+                </div>
+                <div id="dialog">
+                    Thank you for registering. Don't forget to check your Email!
+                </div>
+            </form>
+        </section>
+
+        <footer class="foota">
+            <div>
+                <span>© 2023 Course Registration</span>
+            </div>
+        </footer>
+    </div>
+    
+</body>
+<script src="jquery/jquery.js" type="text/javascript"></script>
+<script src="jquery ui/jquery-ui.js" type="text/javascript"></script>
+<script src="script.JS" type="text/javascript"></script>
+</html>
